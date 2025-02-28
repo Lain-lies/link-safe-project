@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 10px;
+  width: 350px;
+  border: 1px solid rgba(146, 145, 145, 0.388);
+  border-radius: 1px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.insta {
+  height: 140px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 240px;
+  padding: 11px;
+  outline: none;
+  font-size: 12px;
+  border: 1px solid rgba(146, 145, 145, 0.388);
+}
+.btn {
+  width: 265px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  height: 32px;
+  background: #5faaff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.line {
+  width: 90px;
+  height: 1px;
+  background: rgba(146, 145, 145, 0.388);
+}
+.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 30px 0;
+}
+.or h5 {
+  color: gray;
+  margin: 0 25px;
+}
+.link img {
+  width: 18px;
+  margin-right: 10px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+.link a {
+  color: #385185;
+}
+
+.forgot_password {
+  color: rgba(0, 0, 0, 0.747);
+  font-size: 14px;
+}
+.acc {
+  position: relative;
+  left: 10px;
+  width: 350px;
+  height: 70px;
+  border: 1px solid rgba(146, 145, 145, 0.388);
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 200px; */
+}
+
+.acc h4 {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.881);
+}
+.acc h4 a {
+  color: #0077ff;
+  font-weight: 400;
+}
+h2 {
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.881);
+}
+.dowload img {
+  width: 120px;
+  height: 40px;
+}
+.dowload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

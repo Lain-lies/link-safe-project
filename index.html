@@ -6,16 +6,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script  src = "./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
     <title>Link Safe</title>
 
 </head>
 
 <body>
+
+    <h1>Link Safe</h1>
     <form>
-        <label for="url-input">Enter a URL:</label>
-        <input type="url" id="url-input" name="url" placeholder="https://example.com" required>
+        <div>
+            <label for="url-input">Enter a URL :</label>
+            <input type="url" id="url-input" name="url" placeholder="https://example.com" required>
+        </div>
+
         <button type="submit">Check URL</button>
+
     </form>
-    <p></p>
+
+    <h2>Scan Results</h2>
+
+    <div class = "results">
+
+        <div>
+
+            <p class = "source">Google Safe Search</p>
+            <p class = "gss-result"></p>
+
+        </div>
+        
+        <div>
+
+            <p class = "source">Virus Total</p>
+            <p class = "vt-result"></p>
+
+        </div>
+        
+    </div>
+
+
+    <p id = "recommend">Recommended Action</p>
 </body>
 </html>
